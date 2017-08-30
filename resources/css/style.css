@@ -163,6 +163,13 @@ nav span {
 	margin: 2rem 4.5rem;
 }
 
+.thesis {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: row;	
+}
+
 .box {
 	min-width: 30%;
 	background-color: white;

@@ -73,6 +73,10 @@ nav span {
 	background-color: lightgrey;
 }
 
+#grey2 {
+	background-color: lightgrey;
+}
+
 .top {
 	position: relative;
 	margin-top: 4rem;
@@ -151,15 +155,15 @@ Feature Section CSS*/
 	height: auto;
 	width: 65%;
 	display:flex;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-direction: column;
+	align-items: baseline;
 }
 
 .image-content {
 	height: auto;
 	width: 35%;
 	padding: 1rem;
-	
 }
 
 #first {
@@ -223,7 +227,7 @@ Feature Section CSS*/
 	max-height: 55%;
 }
 
-.box p{
+.box p {
 	padding: 0.5rem 0 1rem 0rem;
 	text-align: left;
 }
@@ -262,6 +266,108 @@ footer h5 {
 
 footer span {
 	padding-right: 1.5rem;
+}
+
+@media only screen and (max-width:470px) {
+  	.feature {
+    	flex-direction: column; 
+	}
+
+	.mobile {
+		display: flex;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.left, .right {
+		width: 100%;
+		padding: 0;
+	}
+
+	.section {
+		display: block;
+		width: 100%
+	}
+
+	.top {
+		display: block;
+		margin-top: 2rem;
+	}
+
+	#learn {
+		width: 100%;
+		padding: 2rem 1rem 0 1rem;
+	}
+
+	#learn h2 {
+		line-height: 1.5rem;
+	}
+
+	#learn h1 {
+		line-height: 3rem;
+	}
+
+	.image-content, .text-content {
+		width: 92%;
+		padding: 0 1rem;
+	}
+
+	.image-content img {
+	}
+
+	.text-content {
+		padding-left: 2rem;
+	}
+
+	#first {
+		height: auto;
+		width: 92%;
+		padding: 0 1rem;
+	}
+
+	.mobile h1 {
+		background-color: lightgrey;
+		width: 88%;
+		margin: 0 1rem .5rem 1rem;
+		text-align: left;
+		padding: 1rem 0 1rem 1rem;
+		font-size: 1.5rem;
+	}
+
+	.lineup {
+		display: block;
+		padding: 1rem 0 4rem 0;
+	}
+
+	#grey2 {
+		background-color: white;
+		padding-bottom: 2rem;
+
+	}
+
+	.thesis {
+		padding: 1rem;
+	}
+
+	footer {
+		border-top: solid 0px;
+	}
+
+	footer h5 {
+		padding: 1rem;
+		font-size: .75rem;
+	}
+
+	.btn {
+		background-color: grey;
+		padding: 1rem 0rem;
+	}
+
+	.f_practice {
+		justify-content: flex-end;
+	}
 }
 
 /* {

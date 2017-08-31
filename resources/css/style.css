@@ -307,26 +307,20 @@ footer span {
 		padding: 1rem 2rem 2rem 2rem;	
 		margin: 0 auto;
 	}
-}
 
-@media only screen and (max-width:700px) {
-	.courses {
-		padding: 0;	
-		margin: 0 auto;
+
+	#sidebar_to_bottom {
+		flex-direction: row;
+		align-items: stretch;
+		width: 100%
 	}
 
-	.box {
-		max-width: 100%;
-		align-items: stretch;
+	.feature {
+		background-color: lightgrey;
 	}
 
 	#tablet {
 		flex-direction: column;
-	}
-
-	#sidebar_to_bottom {
-		flex-direction: row;
-		width: 100%
 	}
 
 	.left {
@@ -334,27 +328,62 @@ footer span {
 		padding: 0;
 	}
 
-	.top {
-		flex-direction: column;
-	}
-
-	.right {
-		width: 100%;
-	}
-
-	.f_practice div{
+	.f_practice div {
 		padding-left: 1rem;
+	}
+
+
+	#gone {
+		display: none;
 	}
 
 	#learn {
 		padding: 1rem;
+		text-align: center;
+	}
+
+	.right {
+		width: 100%;
+		justify-content: center;
 	}
 
 }
 
+@media only screen and (max-width:700px) {
+
+	.courses {
+		padding: 0;	
+		display: block; 
+	}
+
+	.box {
+		min-width: 95%;
+		height: auto
+		margin: 0rem;
+		text-align: center;
+	}
+
+	.top {
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+
+
+
+}
+
 @media only screen and (max-width:470px) {
-  	.feature {
+  	#tablet {
+		flex-direction: row;
+	}
+
+	header {
+		justify-content: space-around;
+	}
+
+	.feature {
     	flex-direction: column; 
+    	background-color: white;
 	}
 
 	.mobile {
@@ -393,19 +422,23 @@ footer span {
 		line-height: 3rem;
 	}
 
-	.image-content, .text-content {
-		width: 92%;
-		padding: 0 1rem;
+	.f_practice div {
+		padding-left: 0;
+	}
+	.image-content {
+		width: 100%;
+		height: auto;
+		padding-left: 0;
 	}
 
 	.text-content {
-		padding-left: 2rem;
+		margin-left: 2rem;
+		height: auto;
 	}
 
 	#first {
 		height: auto;
-		width: 92%;
-		padding: 0 1rem;
+		width: 100%;
 	}
 
 	.mobile h1 {
@@ -448,6 +481,11 @@ footer span {
 	.f_practice {
 		justify-content: flex-end;
 	}
+	#sidebar_to_bottom {
+		flex-direction: column;
+		width: 100%
+	}
+
 }
 
 /* {

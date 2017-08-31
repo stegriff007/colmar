@@ -21,6 +21,11 @@ h2 {
 	font-weight: 700;
 }
 
+p, h4 {
+	line-height: 1.5;
+	font-weight: 300;
+}
+
 header {
 	width: 100%;
 	display: flex;
@@ -90,6 +95,10 @@ nav span {
 	align-items: center;
 }
 
+#learn {
+	width: 70%;
+}
+
 .left img {
 	width: 100%;
 	height: auto;
@@ -129,6 +138,10 @@ Feature Section CSS*/
 	justify-content: flex-start;
 }
 
+.f_practice h1 {
+	padding: 2rem 0 1.5rem 0;
+}
+
 .feature {
 	width: 100%;
 	display: flex;
@@ -145,28 +158,38 @@ Feature Section CSS*/
 .image-content {
 	height: auto;
 	width: 35%;
+	padding: 1rem;
+	
+}
+
+#first {
+	height: auto;
+	width: 35%;
+	padding: 0 1rem 1rem 1rem;
 }
 
 .image-content img {
-	padding: 1rem;
 	width: 100%;
 }
 
 /*End Feature Section CSS*/
 
+
+/*Courses Section*/
+
 .courses div {
-	display: inline-flex;
-	align-items: center;
+	display: flex;
+	align-items: flex-start;
 	justify-content: baseline;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .courses {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: row;	
-	margin: 2rem 4.5rem;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: wrap;
+	padding: 1rem 4.5rem 2rem 4.5rem;	
 }
 
 .thesis {
@@ -176,7 +199,7 @@ Feature Section CSS*/
 }
 
 .box {
-	min-width: 30%;
+	max-width: 30%;
 	background-color: white;
 	margin: 1rem;
 	display: flex;
@@ -187,7 +210,7 @@ Feature Section CSS*/
 
 .box img {
 	width: 100%; 
-	height: auto;
+	max-height: 45%;
 }
 
 .box div {
@@ -195,22 +218,32 @@ Feature Section CSS*/
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-around;
+	padding: 1rem;
+	width: 100%
+	max-height: 55%;
 }
 
-.box p, h3 {
-	padding-left: 1rem;
-	padding top: 0.5rem;
+.box p{
+	padding: 0.5rem 0 1rem 0rem;
+	text-align: left;
+}
+
+.box h3 {
+	padding: 1rem 0 .25rem 0rem;
 	text-align: left;
 }
 
 .box h2 {
-	padding-left: 1rem;
-	padding-left: 1rem;
 	text-align: left;
+	padding: 1rem 0 .5rem 0;
 }
 
-.courses h1 {
-	padding: 2rem;
+.box h1 {
+	padding: 2rem 0rem .5rem 0rem;
+}
+
+.f_practice h2 {
+	padding-top: 1.5rem;
 }
 
 footer {

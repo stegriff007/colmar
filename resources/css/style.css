@@ -112,16 +112,13 @@ nav span {
 	padding: 0rem 1.5rem;
 }
 
-
-.right div {
-	display: flex;
-	flex-direction: column;
-}
-
 .section {
 	width: 100%;
 	display: flex;
 }
+
+/*
+Feature Section CSS*/
 
 .f_practice {
 	display: flex;
@@ -133,20 +130,25 @@ nav span {
 	display: flex;
 }
 
-.feature img {
+.text-content {
 	height: auto;
-	padding: 1rem;
-}
-
-.f_right {
 	width: 65%;
-	height: auto;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.f_left {
-	width: 35%;
+.image-content {
 	height: auto;
+	width: 35%;
 }
+
+.image-content img {
+	padding: 1rem;
+	max-width: 100%;
+}
+
+/*End Feature Section CSS*/
 
 .courses div {
 	display: inline-flex;

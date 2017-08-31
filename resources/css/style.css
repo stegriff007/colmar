@@ -268,6 +268,90 @@ footer span {
 	padding-right: 1.5rem;
 }
 
+@media only screen and (max-width:1140px) {
+	
+	.box {
+		max-width: 45%;
+	}
+
+	.feature {
+    	flex-direction: column; 
+    	padding: 1rem;
+	}
+
+	.image-content, .text-content {
+		width: 92%;
+		padding: 0rem;
+	}
+
+	.text-content {
+		padding: 0;
+	}
+
+
+	#first {
+		height: auto;
+		width: 92%;
+		padding: 0rem;
+	}
+
+	.left {
+		width: 70%;
+	}
+
+	.right {
+		width: 20%;
+	}
+
+	.courses {
+		padding: 1rem 2rem 2rem 2rem;	
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.courses {
+		padding: 0;	
+		margin: 0 auto;
+	}
+
+	.box {
+		max-width: 100%;
+		align-items: stretch;
+	}
+
+	#tablet {
+		flex-direction: column;
+	}
+
+	#sidebar_to_bottom {
+		flex-direction: row;
+		width: 100%
+	}
+
+	.left {
+		width: 100%;
+		padding: 0;
+	}
+
+	.top {
+		flex-direction: column;
+	}
+
+	.right {
+		width: 100%;
+	}
+
+	.f_practice div{
+		padding-left: 1rem;
+	}
+
+	#learn {
+		padding: 1rem;
+	}
+
+}
+
 @media only screen and (max-width:470px) {
   	.feature {
     	flex-direction: column; 
@@ -314,9 +398,6 @@ footer span {
 		padding: 0 1rem;
 	}
 
-	.image-content img {
-	}
-
 	.text-content {
 		padding-left: 2rem;
 	}
@@ -344,7 +425,6 @@ footer span {
 	#grey2 {
 		background-color: white;
 		padding-bottom: 2rem;
-
 	}
 
 	.thesis {

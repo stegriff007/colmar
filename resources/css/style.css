@@ -1,6 +1,3 @@
-body: nth-child(even) {
-	background-color: black;
-}
 
 html {
 	font-family: 'Roboto', sans-serif;
@@ -347,6 +344,9 @@ footer span {
 		justify-content: center;
 	}
 
+	.f_practice video {
+		width: 98%;
+	}
 }
 
 @media only screen and (max-width:700px) {
@@ -361,14 +361,39 @@ footer span {
 		height: auto
 		margin: 0rem;
 		text-align: center;
+		justify-content: center
 	}
 
-	.top {
-		flex-direction: column;
-		margin-top: 2rem;
+	.box div {
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 0;
+	}
+	.box h2 {
+		text-align: center;
+		font-size: 2rem;
 	}
 
+	.box h3 {
+		text-align: center;
 
+	}
+
+	.box p {
+		text-align: center;
+		padding: 1rem;
+	}
+
+	nav {
+		padding-right: 1.5rem;
+		font-size: .70rem;
+		line-height: 2;
+	}
+
+	nav div{
+		justify-content: space-around;
+		align-items: center;
 
 }
 
@@ -422,23 +447,25 @@ footer span {
 		line-height: 3rem;
 	}
 
-	.f_practice div {
-		padding-left: 0;
-	}
+	
 	.image-content {
-		width: 100%;
-		height: auto;
-		padding-left: 0;
+		width: 85%;
 	}
 
 	.text-content {
-		margin-left: 2rem;
+		margin-left: .5rem;
+		height: auto;
+	}
+
+	.text-content h4 {
+		padding-right: 2rem;
 		height: auto;
 	}
 
 	#first {
 		height: auto;
-		width: 100%;
+		padding-left: .75rem;
+		width: 85%;
 	}
 
 	.mobile h1 {
@@ -483,7 +510,7 @@ footer span {
 	}
 	#sidebar_to_bottom {
 		flex-direction: column;
-		width: 100%
+		width: 100%;
 	}
 
 }
